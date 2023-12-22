@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    background: #f9f0ff url(./assets/images/background-pattern-desktop.svg) no-repeat
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 400;
+        background: #f9f0ff url(./assets/images/background-pattern-mobile.svg) no-repeat
+    }
+}
+
+h1 {
+    font-weight: 700;
+    color: #2f1533;
+}
+
+h4 {
+    font-weight: 600;
+    color: #2f1533;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+p {
+    font-size: 14px;
+    color: #8c6991;
+}
+
+.accordian p {
+    transition: all 0.3s ease-in-out;
+}
