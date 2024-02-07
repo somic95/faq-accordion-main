@@ -7,7 +7,7 @@ import { useState } from "react"
 
 function App() {
 
-    const [isMenuOpen, setMenuOpen] = useState(Array(3).fill(false));
+    const [isMenuOpen, setMenuOpen] = useState(Array(1).fill(true));
     const toggleMenu = (index) => {
       const updatedStates = [...isMenuOpen];
       updatedStates[index] = !updatedStates[index];
